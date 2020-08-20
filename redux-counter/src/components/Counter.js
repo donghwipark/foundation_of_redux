@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Counter.css';
 
 const Counter = ({ number, color, onIncrement, onDecrement, onSetColor}) => {
+  console.log({ number, color, onIncrement, onDecrement, onSetColor});
   return (
     <div
       className="Counter"
