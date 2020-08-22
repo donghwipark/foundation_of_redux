@@ -8,15 +8,15 @@ const number = (state = initialState, action) => {
   switch(action.type) {
     case types.INCREMENT:
       return {
-        number: action.number + 1
+        number: state.number + 1
       };
     case types.DECREMENT:
       return {
-        number: action.number - 1
+        number: state.number - 1
       }
     default:
       return state;
   }
-}
+};
 
 export default number;

@@ -11,8 +11,6 @@ import { Provider } from 'react-redux';
 
 // CreateStore
 const store = createStore(reducers);
-console.log(store.getState());
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
